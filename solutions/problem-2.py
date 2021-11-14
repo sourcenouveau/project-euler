@@ -34,7 +34,9 @@ def sum_even_fibonacci(limit: int) -> int:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Sum even terms in the Fibonacci sequence.")
+    parser = argparse.ArgumentParser(
+        description="Sum even terms in the Fibonacci sequence."
+    )
     parser.add_argument("limit", type=int)
 
     args = parser.parse_args()
