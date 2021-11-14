@@ -23,7 +23,7 @@ def find_sum_of_multiples_of_3_and_5(limit: int) -> int:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process some integers.")
+    parser = argparse.ArgumentParser(description="Sum multiples of 3 and 5.")
     parser.add_argument("limit", type=int, help="search limit")
 
     args = parser.parse_args()
