@@ -11,9 +11,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 import argparse
 
 
-def find_sum_of_multiples_of_3_and_5(limit: int) -> int:
+def sum_multiples_of_3_and_5(limit: int) -> int:
     """
-    Finds the sum of all multiples of 3 and 5 below the provided limit.
+    Sums all multiples of 3 and 5 below the provided limit.
     :param limit: Limit for multiples to search, non-inclusive.
     :return: Sum of all multiples.
     """
@@ -24,11 +24,11 @@ def find_sum_of_multiples_of_3_and_5(limit: int) -> int:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Sum multiples of 3 and 5.")
-    parser.add_argument("limit", type=int, help="search limit")
+    parser.add_argument("limit", type=int)
 
     args = parser.parse_args()
 
-    result = find_sum_of_multiples_of_3_and_5(args.limit)
+    result = sum_multiples_of_3_and_5(args.limit)
 
     print(f"Sum of multiples of 3 and 5 below {args.limit}:")
     print(result)
